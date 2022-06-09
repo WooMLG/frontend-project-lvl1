@@ -6,3 +6,6 @@ brain-games: #приветствие
 
 publish: #чистая публикация
 	npm publish --dry-run
+
+lint: #запуск линтера
+	npx eslint
