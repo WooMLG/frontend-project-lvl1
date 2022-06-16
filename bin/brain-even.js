@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { name, getEven } from '../src/evenGame.js';
+import  getEven from '../games/evenGame.js';
 
-console.log(`Hello, ${name}`);
+/* console.log(`Hello, ${name}`); */
 
 getEven();
