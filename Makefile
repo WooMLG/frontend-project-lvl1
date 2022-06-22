@@ -18,3 +18,6 @@ brain-calc: #игра калькулятор
 
 fix: #исправление ошибо линтера
 	npx eslint --fix .
+
+brain-gcd: #игра найти НОД
+	node bin/brain-gcd.js
