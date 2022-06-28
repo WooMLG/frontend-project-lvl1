@@ -21,3 +21,6 @@ fix: #исправление ошибо линтера
 
 brain-gcd: #игра найти НОД
 	node bin/brain-gcd.js
+
+brain-progression: #игра арифметическая прогрессия
+	node bin/brain-progression.js
