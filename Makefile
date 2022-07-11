@@ -24,3 +24,6 @@ brain-gcd: #игра найти НОД
 
 brain-progression: #игра арифметическая прогрессия
 	node bin/brain-progression.js
+
+brain-prime: #игра проверка простого числа
+	node bin/brain-prime.js
