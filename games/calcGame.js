@@ -9,13 +9,24 @@ const calcGame = () => {
     // получаем два случайных числа
     const randomNumbers = [getRandomNumber(100), getRandomNumber(100)];
     // определем вид алгебрарической операции
-    const operationType = ['+', '*', '-'];
+    const operationTypes = ['+', '*', '-'];
+    const operationType = operationTypes[getRandomNumber(3)];
     // составляем пример
-    const expression = `${randomNumbers[0]} ${operationType[getRandomNumber(3)]} ${randomNumbers[1]}`;
+    const expression = `${randomNumbers[0]} ${operationType} ${randomNumbers[1]}`;
     // получаем правильный ответ
-    const rightAnswer = String(eval(expression));
+    const rightAnswer = () => {
+      let result = 0;
+      if (operationType === '+') {
+        result = randomNumbers[0] + randomNumbers[1];
+      } else if (operationType === '*') {
+        result = randomNumbers[0] * randomNumbers[1];
+      } else if (operationType === '-') {
+        result = randomNumbers[0] - randomNumbers[1];
+      }
+      return String(result);
+    };
 
-    return [expression, rightAnswer];
+    return [expression, rightAnswer()];
   };
 
   gameBasic(gameTask, gameData);
