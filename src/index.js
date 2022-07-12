@@ -21,7 +21,7 @@ const gameBasic = (gameRule, gameData) => {
     } else {
       console.log(`"${getAnswer}" is wrong answer ;(. Correct answer was "${theAnswer}"`);
 
-      return console.log(`Let's try again ${name}!`);
+      return console.log(`Let's try again, ${name}!`);
     }
   }
 
