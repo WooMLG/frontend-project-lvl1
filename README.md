@@ -4,4 +4,6 @@
 
 Примеры игр:
 
-brain-games: https://asciinema.org/a/4UjBQpbbA7fBWovM4XHkBLywN
+brain-games: https://asciinema.org/a/508043
+
+brain-even: https://asciinema.org/a/508047
