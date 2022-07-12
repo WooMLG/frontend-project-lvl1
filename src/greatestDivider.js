@@ -1,12 +1,18 @@
-const greatestDivider = (num1, num2) => {
+const greatestDivider = (numOne, numTwo) => {
   let divider = 0;
-  while (num1 !== num2) {
-    if (num1 > num2) {
-      num1 -= num2;
+  if (numOne > numTwo && numOne % numTwo === 0) {
+    return numTwo;
+  } else if (numTwo > numOne && numTwo % numOne === 0) {
+    return numOne;
+  }
+
+  while (numOne !== numTwo) {
+    if (numOne > numTwo) {
+      numOne -= numTwo;
     } else {
-      divider = num1;
-      num1 = num2;
-      num2 = divider;
+      divider = numOne;
+      numOne = numTwo;
+      numTwo = divider;
     }
   }
 
