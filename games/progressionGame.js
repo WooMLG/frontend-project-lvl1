@@ -16,7 +16,7 @@ const progressionGame = () => {
 
     randomProgression[indexOfElement] = '..';
 
-    return [randomProgression, rightAnswer];
+    return [randomProgression.join(' '), rightAnswer];
   };
 
   gameBasic(gameTask, gameData);
