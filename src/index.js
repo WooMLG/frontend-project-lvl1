@@ -25,7 +25,7 @@ const gameBasic = (gameRule, gameData) => {
     }
   }
 
-  return console.log(`Congratulations, ${name}`);
+  return console.log(`Congratulations, ${name}!`);
 };
 
 export default gameBasic;
