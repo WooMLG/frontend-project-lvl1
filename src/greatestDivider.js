@@ -2,7 +2,7 @@ const greatestDivider = (numOne, numTwo) => {
   let divider = 0;
   if (numOne > numTwo && numOne % numTwo === 0) {
     return numTwo;
-  } else if (numTwo > numOne && numTwo % numOne === 0) {
+  } if (numTwo > numOne && numTwo % numOne === 0) {
     return numOne;
   }
 
